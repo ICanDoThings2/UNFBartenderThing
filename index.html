@@ -1,20 +1,26 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
     <meta charset="utf-8" />
     <title>Home</title>
 
-    
+
 </head>
 <body>
 
-    <button type="button" formaction="">View Menu</button>
+    <script type="text/javascript" src="server.js"></script>
+
+    <button type="button" onclick="getMenu()" value="run external javascript">View Menu</button>
+
+    <div id="menu"></div>
+
+    <div id="orders"></div>
 
     <form action="/vieworders.php" method="get">
-        <button type="button">View Orders</button>
+        <button type="button" onclick="getOrders()" value="run external javascript">View Orders</button>
     </form>
 
-    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
